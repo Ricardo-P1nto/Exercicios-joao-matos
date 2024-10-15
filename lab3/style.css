@@ -1,0 +1,19 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.principal{
+    background-color: cadetblue;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal p{
+    font-size: 3rem;
+}
