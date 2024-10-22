@@ -17,3 +17,13 @@
 .principal p{
     font-size: 3rem;
 }
+
+.imagem{
+    width: 100%;
+    height: 100%;
+}
+
+.imagem p{
+    position:absolute;
+    color:chocolate;
+}
