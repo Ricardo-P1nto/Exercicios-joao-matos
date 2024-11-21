@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript Example</title>
-  <link rel="stylesheet" href="../Nova pasta (2)/style.css">
 </head>
-
-
-
 <body>
   <h1 id="titulo">Hello, World!</h1>
-  <button onclick="mudarCor()">Clica-me!!</button>
-  <script src="../Nova pasta (2)/style.js"></script>
+
+  <div>
+    <button onclick="mudarCor()">Clica-me!!</button>
+  </div>
+
+  <div>
+    <button onclick="mostrarPopUp()">Clica-me para o pop-up</button>
+  </div>
+
+  <div id="galeria">
+    <img id="imagem" src="imagens/portugal.jpg" alt="imagens" style="width: 300px; height: 200px;">
+    <button onclick="mudarImagem()">Próxima Imagem</button>
+  </div>
+
+  <script src="style.js"></script>
 </body>
 </html>
