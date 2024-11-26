@@ -23,3 +23,18 @@ function mudarImagem() {
   indiceAtual = (indiceAtual + 1) % imagens.length;
   document.getElementById("imagem").src = imagens[indiceAtual];
 }
+
+function mostrarDados() {
+  fetch("dados.json")
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById("dadosDaAPI");
+      container.innerHTML = "";
+      data.dados.forEach(item => {
+        const div = document.createElement("div");
+        div.innerHTML = `<h2>${item.nome}</h2><p>${item.descricao}</p>`;
+        container.appendChild(div);
+      });
+    })
+    .catch(error => console.error("Erro ao buscar os dados:", error));
+}
